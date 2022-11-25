@@ -1,0 +1,379 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+
+
+<category>
+   <pattern>EXPLAIN AI</pattern>
+   
+   <template>
+     Artificial intelligence (AI) is an area of computer science that emphasizes the creation of intelligent machines that work and react like humans.
+
+   </template>
+   
+</category>
+
+<category>
+   <pattern>EXPLAIN * AI</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>* EXPLAIN AI</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>EXPLAIN AI *</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* EXPLAIN AI *</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* EXPLAIN * AI</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* EXPLAIN * AI *</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+<!-- END OF EXPALIN DEVOVPS -->
+<category>
+   <pattern>DESCRIBE AI</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* DESCRIBE AI</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>DESCRIBE * AI</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>DESCRIBE AI *</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* DESCRIBE AI *</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* DESCRIBE * AI</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* DESCRIBE * AI *</pattern>
+   
+   <template>
+   <srai>EXPLAIN AI</srai> 
+   </template>
+   
+</category>
+
+<!-- END OF DESCRIBE DEVOPS -->
+<category>
+   <pattern>TOOLS AI</pattern>
+   
+   <template>
+     1.NLP
+     2.SCIKIT
+     3.TENSOR FLOW
+   </template>
+   
+</category>
+
+<category>
+   <pattern>TOOLS * AI</pattern>
+   
+   <template>
+   <srai>TOOLS AI</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* TOOLS AI</pattern>
+   
+   <template>
+   <srai>TOOLS AI</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>TOOLS AI *</pattern>
+   
+   <template>
+   <srai>TOOLS AI</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>* TOOLS AI *</pattern>
+   
+   <template>
+   <srai>TOOLS AI</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* TOOLS * AI</pattern>
+   
+   <template>
+   <srai>TOOLS AI</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* TOOLS * AI *</pattern>
+   
+   <template>
+   <srai>TOOLS AI</srai> 
+   </template>
+   
+</category>
+
+<!-- END OF TOOLS DEVOPS -->
+
+
+<category>
+   <pattern>AI PROCESS</pattern>
+   
+   <template>
+     1.reasoning,problem solving
+     2.knowledge representation
+     3. planning 
+     4.leaning
+     5. natural lang processing
+     6. preception
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* AI PROCESS</pattern>
+   
+   <template>
+   <srai>AI PROCESS</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>AI * PROCESS</pattern>
+   
+   <template>
+   <srai>AI PROCESS</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>AI PROCESS *</pattern>
+   
+   <template>
+   <srai>AI PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* AI PROCESS *</pattern>
+   
+   <template>
+   <srai>AI PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* AI * PROCESS</pattern>
+   
+   <template>
+   <srai>AI PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* AI * PROCESS *</pattern>
+   
+   <template>
+   <srai>AI PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+
+<!-- END OF PROCESS DEVOPS -->
+
+
+<category>
+   <pattern>ADVANTAGES AI</pattern>
+   
+   <template>
+    
+   1.Error reduction
+   2. Difficult exploration
+   3. Daily application
+   4. Digital assistants
+
+   </template>
+   
+   </category>
+
+
+<category>
+   <pattern>ADVANTAGES * AI</pattern>
+   
+   <template>
+   <srai>ADVANTAGES AI</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* ADVANTAGES AI</pattern>
+   
+   <template>
+   <srai>ADVANTAGES AI</srai> 
+   </template>
+
+</category>
+
+<category>
+   <pattern>ADVANTAGES AI *</pattern>
+   
+   <template>
+   <srai>ADVANTAGES AI</srai> 
+   </template>
+   
+</category>
+
+
+
+
+
+<category>
+   <pattern>* ADVANTAGES AI *</pattern>
+   
+   <template>
+   <srai>ADVANTAGES AI</srai> 
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>* ADVANTAGES * AI *</pattern>
+   
+   <template>
+   <srai>ADVANTAGES AI</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* ADVANTAGES * AI</pattern>
+   
+   <template>
+   <srai>ADVANTAGES AI</srai> 
+   </template>
+   
+</category>
+
+<!-- END OF ADVANTAGES OF DEVOPS -->
+</aiml>
+

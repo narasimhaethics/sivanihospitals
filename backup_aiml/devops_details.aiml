@@ -1,0 +1,383 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+
+
+<category>
+   <pattern>EXPLAIN DEVOPS</pattern>
+   
+   <template>
+     1. Build - continuous integration and testing
+     2. Release - continuous delivery and deployment
+     3. Operate - continuous operations
+     4. Monitor
+
+   </template>
+   
+</category>
+
+<category>
+   <pattern>EXPLAIN * DEVOPS</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>* EXPLAIN DEVOPS</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>EXPLAIN DEVOPS *</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* EXPLAIN DEVOPS *</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* EXPLAIN * DEVOPS</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* EXPLAIN * DEVOPS *</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+<!-- END OF EXPALIN DEVOVPS -->
+<category>
+   <pattern>DESCRIBE DEVOPS</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* DESCRIBE DEVOPS</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>DESCRIBE * DEVOPS</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>DESCRIBE DEVOPS *</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* DESCRIBE DEVOPS *</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* DESCRIBE * DEVOPS</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* DESCRIBE * DEVOPS *</pattern>
+   
+   <template>
+   <srai>EXPLAIN DEVOPS</srai> 
+   </template>
+   
+</category>
+
+<!-- END OF DESCRIBE DEVOPS -->
+<category>
+   <pattern>TOOLS DEVOPS</pattern>
+   
+   <template>
+     1.Git/Bitbucket for SCM
+     2.Jenkins for Testing
+     3.Ansible
+   </template>
+   
+</category>
+
+<category>
+   <pattern>TOOLS * DEVOPS</pattern>
+   
+   <template>
+   <srai>TOOLS DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* TOOLS DEVOPS</pattern>
+   
+   <template>
+   <srai>TOOLS DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>TOOLS DEVOPS *</pattern>
+   
+   <template>
+   <srai>TOOLS DEVOPS</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>* TOOLS DEVOPS *</pattern>
+   
+   <template>
+   <srai>TOOLS DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* TOOLS * DEVOPS</pattern>
+   
+   <template>
+   <srai>TOOLS DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* TOOLS * DEVOPS *</pattern>
+   
+   <template>
+   <srai>TOOLS DEVOPS</srai> 
+   </template>
+   
+</category>
+
+<!-- END OF TOOLS DEVOPS -->
+
+
+<category>
+   <pattern>DEVOPS PROCESS</pattern>
+   
+   <template>
+     1.Devops Assessment - our DevOps consulting services assess your DevOps practices audit your existing
+       infrastructure,development pipeline,list down the redundant tasks and identify the right set of tools.
+    
+     2.DevOps Automation - After auditing your existing setup and drawing the ideal workflows, we set-up and automate   	     your continuous delivery pipeline.
+ 
+     3.DevOps Management - Apart from automating your processes, we help you to manage the health of your continuous delivery pipeline. We  take care of release management, continuous deployment, replica environment, new server setup, change management and performance optimization on an ongoing basis. 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* DEVOPS PROCESS</pattern>
+   
+   <template>
+   <srai>DEVOPS PROCESS</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>DEVOPS * PROCESS</pattern>
+   
+   <template>
+   <srai>DEVOPS PROCESS</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>DEVOPS PROCESS *</pattern>
+   
+   <template>
+   <srai>DEVOPS PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* DEVOPS PROCESS *</pattern>
+   
+   <template>
+   <srai>DEVOPS PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* DEVOPS * PROCESS</pattern>
+   
+   <template>
+   <srai>DEVOPS PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* DEVOPS * PROCESS *</pattern>
+   
+   <template>
+   <srai>DEVOPS PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+
+<!-- END OF PROCESS DEVOPS -->
+
+
+<category>
+   <pattern>ADVANTAGES DEVOPS</pattern>
+   
+   <template>
+    
+   1. Improved customer experience and satisfaction
+   2. Breaking down the silos
+   3. Aligning it and business
+   4. Enabling the business 
+   5. Digital transformation
+
+   </template>
+   
+   </category>
+
+
+<category>
+   <pattern>ADVANTAGES * DEVOPS</pattern>
+   
+   <template>
+   <srai>ADVANTAGES DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* ADVANTAGES DEVOPS</pattern>
+   
+   <template>
+   <srai>ADVANTAGES DEVOPS</srai> 
+   </template>
+
+</category>
+
+<category>
+   <pattern>ADVANTAGES DEVOPS *</pattern>
+   
+   <template>
+   <srai>ADVANTAGES DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+
+
+
+<category>
+   <pattern>* ADVANTAGES DEVOPS *</pattern>
+   
+   <template>
+   <srai>ADVANTAGES DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>* ADVANTAGES * DEVOPS *</pattern>
+   
+   <template>
+   <srai>ADVANTAGES DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* ADVANTAGES * DEVOPS</pattern>
+   
+   <template>
+   <srai>ADVANTAGES DEVOPS</srai> 
+   </template>
+   
+</category>
+
+<!-- END OF ADVANTAGES OF DEVOPS -->
+</aiml>
+

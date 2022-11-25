@@ -1,0 +1,21 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+
+
+    <category>
+
+        
+        <pattern>LOAD AIML B</pattern>
+
+       
+        <template>
+            <learn>basic_chat.aiml</learn>
+            <learn>cpbasic_chat.aiml</learn>
+            <learn>company_employee_detail.aiml</learn>
+            <learn>comp_services.aiml</learn>
+            <learn>devops_details.aiml</learn>
+        </template>
+        
+    </category>
+
+</aiml>

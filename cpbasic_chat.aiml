@@ -1,0 +1,276 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+
+<category>
+   <pattern>* HONCHI SERVICES *</pattern>
+   
+   <template>
+ 
+   <srai>HONCHI SERVICES</srai>  
+   </template>
+   
+</category>
+
+<category>
+   <pattern>* HONCHI SERVICES</pattern>
+   
+   <template>
+ 
+   <srai>HONCHI SERVICES</srai>  
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>HONCHI * SERVICES</pattern>
+   
+   <template>
+ 
+   <srai>HONCHI SERVICES</srai>  
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>HONCHI SERVICES *</pattern>
+   
+   <template>
+ 
+   <srai>HONCHI SERVICES</srai>  
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>HONCHI SERVICES</pattern>
+   
+   <template>
+ 
+    DevOps
+    Micro Services
+    AI    
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* SERVICES *</pattern>
+   
+   <template>
+ 
+   <srai>HONCHI SERVICES</srai>  
+   </template>
+   
+</category>
+
+<category>
+   <pattern>* SERVICES</pattern>
+   t
+   <template>
+ 
+   <srai>HONCHI SERVICES</srai>  
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>SERVICES *</pattern>
+   
+   <template>
+ 
+   <srai>HONCHI SERVICES</srai>  
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* HONCHI</pattern>
+   
+   <template>
+            <srai>HONCHI</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>HONCHI *</pattern>
+   
+   <template>
+            <srai>HONCHI</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* HONCHI *</pattern>
+   
+   <template>
+            <srai>HONCHI</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>HONCHI</pattern>
+   
+   <template>
+      HONCHI Provides open source technology support .Honchi is a tech driven company,which makes large enterprises,SMEs and startups to help in achieve niche technology like DevOps MicroServices AI        
+   </template>
+   
+</category>
+
+
+
+
+
+
+<category>
+   <pattern>WHERE IS HONCHI</pattern>
+   
+   <template>
+            113, Vayu Business Center,
+            Kanka Towers, 
+            Dollars Colony Main road,
+            J.P Nagar, 4th Phase,
+            Dollar Layout, Phase 4,
+            JP Nagar, Bangalore,
+            Karnataka - 560078 
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>* WHERE IS HONCHI *</pattern>
+   
+   <template>
+            
+       
+         <srai>WHERE IS HONCHI</srai> 
+
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>* WHERE IS HONCHI</pattern>
+   
+   <template>
+            
+       
+         <srai>WHERE IS HONCHI</srai> 
+
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* HONCHI LOCATION</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>HONCHI LOCATION *</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI</srai> 
+   </template>
+   
+</category>
+
+
+    
+
+<category>
+   <pattern>* HONCHI LOCATION *</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* LOCATION HONCHI</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* LOCATION HONCHI</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI</srai> 
+   </template>
+   
+</category>
+
+
+    
+
+<category>
+   <pattern>* LOCATION HONCHI *</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* LOCATION * HONCHI</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* LOCATION * HONCHI *</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI</srai> 
+   </template>
+   
+</category>
+
+
+
+
+</aiml>

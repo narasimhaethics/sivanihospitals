@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="facivon.ico">
+
+    <title>{% block title %}chat {% endblock %}</title>
+      {% load staticfiles %}
+   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <script>
+    </script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </head>
+  <body>
+
+  <h1></h1>
+  <!--<div class="chat_box">
+	<div class="chat_head"> Chat Box</div>
+    <div class="chat_bot"></div>
+	<div class="chat_body">
+	<div class="user">  chat bot</div>
+	</div>
+  </div> -->
+
+<div class="msg_box" style="right:10px">
+	<div class="msg_head">chat bot
+	<div class="close">x</div>
+	</div>
+	<div class="msg_wrap">
+		<div class="msg_body">
+            <div class="msg_a">Honchi Bot</div>
+			<div class="msg_b">Your query please??</div>
+			<div class="msg_a">{{message}}</div>
+			<div class="msg_push"></div>
+		</div>
+
+           <form action="/search/" method="get">
+
+               <div class="msg_footer" style="float:left"><textarea class="msg_input" rows="2" name="q"></textarea></div>
+               <div style="float:left"> <input type="submit" name="submit" value="Send" id="submitt"/></div>
+</form>
+</div>
+
+    </div>
+
+</div>
+  {% block body %}
+
+{% endblock %}
+</body>
+</html>
+

@@ -1,0 +1,435 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <!-- title and meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+
+  <title>Devops, Microservices, AI</title>
+<link rel="icon" type="image/png" href="{% static 'img/core/logo.png'%}">
+  <!-- css -->
+      <link href="css/w3.css" rel="stylesheet" type="text/css">
+    <link href="css/w4.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Mrs+Sheppards" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pinyon+Script" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Monoton" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Aguafina+Script" />
+  <link rel="stylesheet" href="{% static 'css/base.css'%}">
+  <link rel="stylesheet" href="{% static 'css/style.css'%}"><link rel="stylesheet" href="{% static 'css/style1.css'%}">
+  <link href="{% static 'css/ddfullscreenmenu.css'%}" rel="stylesheet" type="text/css">
+   <link href="{% static 'css/ser.css'%}" rel="stylesheet" type="text/css">
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="{% static 'js/ddfullscreenmenu.js'%}"></script>
+    <script src="{% static 'js/script.js'%}"></script>
+    <style>
+
+        .w3-bar .w3-button {
+    padding: 16px;
+}
+    </style>
+
+
+
+  <!-- js -->
+  <script src="{% static 'js/modernizr.js'%}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body ng-app="honchi">
+
+<div class="wrapper">
+
+  <!-- new nav -->
+  <nav id="ddfullscreenmenu">
+	<div id="closex">Close</div>
+    <div id="ulwrapper">
+
+
+	<!-- Define your UL (nested) menu below -->
+		<ul id="fullscreenmenu-ul">
+		<li><a href="/index/">HOME</a></li>
+		<li><a href="/index/#About">ABOUT US</a>
+		  </li>
+		<li><a href="/index/#serv">SERVICES</a>
+		  <ul>
+		  <li><a href="/devops/#serv">DEVOPS</a></li>
+		  <li><a href="/microservices/#micro">MICRO SERVICES</a></li>
+		  <li><a href="/ai/#ai">ARTIFICIAL INTELLIGENCE</a></li>
+		  </ul>
+		</li>
+		<li><a href="/index/#Product">PRODUCTS</a></li>
+		</li>
+		<li><a href="/index/#contact">CONTACT US</a></li>
+		</ul>
+	</div>
+</nav>
+
+<script>
+
+// initialize menu. Call this after menu markup:
+ddfullscreenmenu.init()
+
+</script>
+ <div class="header">
+      <a href ="/index/">
+       <img class="logo" style="position:fixed; right:0px; top:0px;"  src="{% static 'img/core/logo.png'%}" width="100px" height="100px"/></a>
+
+ </div>
+
+<div id="navtoggler" onClick="ddfullscreenmenu.togglemenu()"></div>
+
+   <main>
+<script>
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 08) || 9000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 05);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 2);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid white}";
+        document.body.appendChild(css);
+    };
+</script>
+      <section class="module parallax parallax-1">
+              <div class="container">
+                <h1>HONCHI</h1>
+
+               <p style="font-size:30px; color: black;font-family: Monoton;" class="animate-box dev" style="padding-bottom:300px;">
+                 <a href="/index/#serv" class="typewrite" data-period="2000" data-type=" [ &quot;MONOLITHIC TO MICRO SERVICES&quot;,&quot;KILLED MANAGED SERVICES THROUGH DEVOPS &quot;,&quot;SOFTWARE TO ARTIFICIAL INTILLIGENCE&quot;]" style="color:black;font-family:Orbitron;"></a>
+               </p>
+                   <div class="mySlides ">
+                       <p><a href="#work" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
+      </div>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-7"   id="serv">
+          <div class="container">
+            <h1>Chatbot</h1><br>
+
+          </div>
+        </section>
+
+
+</main><!-- /main -->
+
+<section class="module content2" >
+    <div class="w3-row-padding w3-white w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center w3-padding-64 ">
+       <img class="w3-image w3-round-large w3-margin-right" src="{% static 'img/demo/_small/ch2.jpg' %}" alt="AI" width="700" height="700" style="margin-top:20px;"/>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>ChatBot-Overivew </h1>
+      <p class="w3-text-grey" style="text-align:justify;text-justify;padding-left:20px;">A chatbot is a computer program which conducts a conversation via auditory or textual methods.
+  Chatterbots are typically used in dialog systems for various practical purposes including customer service or information acquisition.
+  Some chatterbots use sophisticated natural language processing systems, but many simpler systems scan for keywords within the input, then pull a reply with the most matching keywords, or the most similar wording pattern, from a database.
+  Currently chatbots are widely used as part of instant messaging platforms</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Chatbots are typically used in dialog systems for various practical purposes including customer service or information acquisition. Some chatterbots use sophisticated natural language processing systems</h1>
+</div>
+          <hr>
+</section>
+
+
+    <div id= "section4">
+     <div class="w3-row-padding w3-padding-64 w3-light-grey w3-animate-bottom " id="work">
+    <div class="w3-quarter ">
+     <h2>Our-Services</h2>
+     <p>We are highly motivated and
+enthusiastic, and we feel passionate and proud about what we do! Working in partnership with our
+customers we help them extend their reach into an ever changing competitive marketplace. We continually
+seek to add value through transformation initiatives and high growth models.</p>
+     </div>
+
+     <div class="w3-quarter ">
+     <div class="w3-card-2 w3-white">
+       <img src="{% static 'img/core/d1.png' %}" alt="Vernazza" style="width:100%">
+       <div class="w3-container">
+       <h2>services  and security.</h2>
+
+
+       </div>
+       </div>
+     </div>
+
+     <div class="w3-quarter">
+     <div class="w3-card-2 w3-white">
+       <img src="{% static 'img/core/d2.png' %}" alt="Cinque Terre" style="width:100%">
+        <!-- <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i> -->
+       <div class="w3-container">
+       <h2>Chatbot Personality </h2>
+
+       </div>
+       </div>
+     </div>
+
+     <div class="w3-quarter">
+     <div class="w3-card-2 w3-white">
+       <img src="{% static 'img/core/d6.png' %}" alt="Monterosso" style="width:100%">
+       <div class="w3-container">
+       <h2>Hot "swap-ability"</h2>
+       </div>
+       </div>
+     </div>
+   </div>
+ </div>
+     <br><br> <br><br>
+     <hr>
+<div class="w3-container w3-row w3-center w3-black">
+                   <u><h2></h2></u>
+
+                    </div>
+
+<hr>
+
+    <div id="section2" >
+          <div class="w3-container w3-row w3-center w3-dark-grey">
+                   <u><h2>We super specialize in these tools</h2></u>
+
+                    </div>
+  <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+
+           <div class="w3-card-2 w3-container" style="min-height:460px">
+    <h3>Kubernetes</h3><br>
+  <image src="{% static 'img/core/mtool1.jpg' %}" class="img-circle" alt="Cinque Terre" width="200" height="200" position="relative"/>
+    <p>Kubernetes is an open-source system for automating deployment,
+        scaling and management of containerized applications
+        that was originally designed by Google and donated to the Cloud Native Computing Foundation.</p>
+    </div>
+        <li class="w3-black w3-padding-24">
+          <!--<button class="w3-button w3-black w3-padding-large">Tool</button>-->
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow w3-animated-opacity">
+           <div class="w3-card-2 w3-container" style="min-height:460px">
+                     <h3>MEOKAY</h3><br>
+      <image src="{% static 'img/core/chat4.png'%}" alt="Cinque Terre" width="125" height="200" position="relative"/>
+  <p>Meokay builds Chatbots that upgrade the email marketing promoting;
+     Give your subscribers a chance to see your advertising messages in their most loved Messenger app</p>
+    </div>
+        <li class="w3-black w3-padding-24">
+          <!-- <button class="w3-button w3-black w3-padding-large">Tool</button>-->
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+           <div class="w3-card-2 w3-container" style="min-height:460px">
+        <h3>BOTSIFY</h3><br>
+
+       <image src="{% static 'img/core/botsify.png'%}" alt="Cinque Terre" width="125" height="200" position="relative"/>
+
+  <p>Using botsify “Everyone should be able to create a chatbot, without programming knowledge. Add intelligence to
+      chatbots with existing platforms or your website data to increase your conversions.”.</p>
+    </div>
+        <li class="w3-black w3-padding-24">
+          <!--<button class="w3-button w3-black w3-padding-large">Tool</button>-->
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+
+<!-- chatbot -->
+<script>
+    $(document).ready(function() {
+
+    setTimeout(function () {
+    //$(".msg_wrap").show();
+    //$(".msg_box").css('visibility','hidden');
+    $(".msg_box").css('display', 'inline-block');
+  }, 6000);
+       // $('msg_head').(function(){
+           // $('.msg_wrap').slideDown();
+        //});
+        $('.chat_head').click(function () {
+            $('.chat_body').slideToggle('slow');
+        });
+        $('.msg_head').click(function () {
+          $('.msg_wrap').slideToggle('slow');
+
+
+        });
+        $('.user').click(function () {
+
+            $('.msg_wrap').show();
+            $('.msg_box').show();
+        });
+
+       // $('#submitt').click(function(){
+           //alert(msg);
+         //  $('<div class="msg_b">'+input+'</div>').insertBefore('.msg_push');
+            //$('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+
+          //$('<div class="msg_a">'+msg+'</div>').insertBefore('.msg_push');
+           // $('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+
+       // });
+
+
+
+
+         $(document).on('submit','.dynamic-form', function (e) {
+e.preventDefault();
+var input = $('#tddd').val();
+var urlss="{%url 'search'%}";
+          $.ajax({
+    type: 'get',
+    url: "/search/",
+    data: {input:input},
+
+    success: function(request) {
+    //alert(request);
+    $('.msg_a').html(request);
+    $('#tddd').val('')
+    }
+  });
+        });
+
+
+
+
+    });
+
+</script>
+
+               <div class="msg_box" style="right:10px;display:inline-block">
+        <div class="msg_head">Honchi Operator
+            <div class="close" style="color:white">x</div>
+	</div>
+
+	<div class="msg_wrap">
+		<div class="msg_body">
+            <input type="hidden" value="{{message}}" name="msg" id="msgg"/>
+            <div class="msg_s">Ask me Anything</div>
+			<div class="msg_b"></div>
+			<div class="msg_a"></div>
+			<div class="msg_push"></div>
+		</div>
+           <form method="get" class="dynamic-form">
+<input type="hidden" name="p" value="index.html"/>
+               <div class="msg_footer" style="float:left"><input type="text" placeholder="Type your query" class="msg_input" id= "tddd" rows="4" name="q" style="width:220px;height:70px;" ></input></div>
+               <div style="float:left;"> <input type="submit" name="submit" value="" class="submitt" style="visibility:hidden;"/></div>
+    </form>
+         </div>
+
+    </div>
+
+</div>
+  </main>
+</div>
+     <footer role="contentinfo" id="contact">
+  <div class="container">
+
+      <a href="#id" onClick="fullwin('https://twitter.com/honchisolutions')"><i class="fa fa-twitter"></i></a>
+      <a href="#id" onClick="fullwin('https://www.facebook.com/Honchi-solution-1897804073789457/?ref=bookmarks')"><i class="fa fa-facebook"></i></a>
+      <a href="#id" onClick="fullwin('https://www.instagram.com/honchisolutions/')"><i class="fa fa-instagram"></i></a>
+      <a href="#id" onClick="fullwin('https://www.linkedin.com/company-beta/13282456/')"><i class="fa fa-linkedin"></i></a>
+
+      <div style="position:relative;bottom:20px;" class="w3-tooltip w3-right">
+         <a class="" href="#"><span class="w3-xlarge">
+         <i class="fa fa-chevron-circle-up  " style="color:black;"></i></span></a>
+       </div>
+  </div>
+       </footer>
+
+  			<!-- Main Icon Menu -->
+
+
+
+</div><!-- /#wrapper -->
+
+<!-- ads -->
+
+<script>
+function fullwin(targeturl){
+window.open(targeturl,"","fullscreen,scrollbars")
+}
+</script>
+<!-- analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34160351-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</body>
+</html>

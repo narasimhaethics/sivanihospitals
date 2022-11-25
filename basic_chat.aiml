@@ -1,0 +1,32 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+
+<category>
+<pattern>Hello</pattern>
+<template>Hi i am Bot.... How do i help you?</template>
+</category>
+<category>
+<pattern>hey</pattern>
+<template>Hi i am Bot.... How can i help you?</template>
+</category>
+<category>
+<pattern>Contact</pattern>
+<template>Sivani Hospitals, kadapa</template>
+</category>
+<category>
+<pattern>symptoms of dengue</pattern>
+<template>Symptoms include high fever, headache, rash and muscle and joint pain. 
+In severe cases there is serious bleeding and shock, which can be life threatening.</template>
+</category>
+<category>
+<pattern>** dengue **</pattern>
+<template>Symptoms include high fever, headache, rash and muscle and joint pain. 
+In severe cases there is serious bleeding and shock, which can be life threatening.</template>
+</category>
+<category>
+<pattern>dengue</pattern>
+<template>Symptoms include high fever, headache, rash and muscle and joint pain. 
+In severe cases there is serious bleeding and shock, which can be life threatening.</template>
+</category>
+</aiml>

@@ -1,0 +1,377 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+
+
+<category>
+   <pattern>EXPLAIN MICROSERVICES</pattern>
+   
+   <template>
+     Microservices is a variant of the service-oriented architecture (SOA) architectural style that structures an application as a collection of loosely coupled services. In a microservices architecture, services should be fine-grained and the protocols should be lightweight
+
+   </template>
+   
+</category>
+
+<category>
+   <pattern>EXPLAIN * MICROSERVICES</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>* EXPLAIN MICROSERVICES</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>EXPLAIN MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* EXPLAIN MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* EXPLAIN * MICROSERVICES</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* EXPLAIN * MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+<!-- END OF EXPALIN DEVOVPS -->
+<category>
+   <pattern>DESCRIBE MICROSERVICES</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* DESCRIBE MICROSERVICES</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>DESCRIBE * MICROSERVICES</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>DESCRIBE MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* DESCRIBE MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* DESCRIBE * MICROSERVICES</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* DESCRIBE * MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>EXPLAIN MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+<!-- END OF DESCRIBE DEVOPS -->
+<category>
+   <pattern>TOOLS MICROSERVICES</pattern>
+   
+   <template>
+     1.containers:Docker
+     2.kubernetes
+     3.Prometheus
+   </template>
+   
+</category>
+
+<category>
+   <pattern>TOOLS * MICROSERVICES</pattern>
+   
+   <template>
+   <srai>TOOLS MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* TOOLS MICROSERVICES</pattern>
+   
+   <template>
+   <srai>TOOLS MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>TOOLS MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>TOOLS MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>* TOOLS MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>TOOLS MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* TOOLS * MICROSERVICES</pattern>
+   
+   <template>
+   <srai>TOOLS MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* TOOLS * MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>TOOLS MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+<!-- END OF TOOLS DEVOPS -->
+
+
+<category>
+   <pattern>MICROSERVICES PROCESS</pattern>
+   
+   <template>
+    1. Object Oriented Programming (OOP)
+    2 .Web service / API—a way to expose the functionality of your application to others
+    3 .Single Responsibility Principle (SRP)—the idea of code with one focus
+    4.Interface Segregation Principle (ISP)—the idea of code with defined boundaries
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* MICROSERVICES PROCESS</pattern>
+   
+   <template>
+   <srai>MICROSERVICES PROCESS</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>MICROSERVICES * PROCESS</pattern>
+   
+   <template>
+   <srai>MICROSERVICES PROCESS</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>MICROSERVICES PROCESS *</pattern>
+   
+   <template>
+   <srai>MICROSERVICES PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* MICROSERVICES PROCESS *</pattern>
+   
+   <template>
+   <srai>MICROSERVICES PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* MICROSERVICES * PROCESS</pattern>
+   
+   <template>
+   <srai>MICROSERVICES PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* MICROSERVICES * PROCESS *</pattern>
+   
+   <template>
+   <srai>MICROSERVICES PROCESS</srai> 
+   </template>
+   
+</category>
+
+
+
+<!-- END OF PROCESS DEVOPS -->
+
+
+<category>
+   <pattern>ADVANTAGES MICROSERVICES</pattern>
+   
+   <template>
+    
+   1.Error reduction
+   2. Difficult exploration
+   3. Daily application
+   4. Digital assistants
+
+   </template>
+   
+   </category>
+
+
+<category>
+   <pattern>ADVANTAGES * MICROSERVICES</pattern>
+   
+   <template>
+   <srai>ADVANTAGES MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* ADVANTAGES MICROSERVICES</pattern>
+   
+   <template>
+   <srai>ADVANTAGES MICROSERVICES</srai> 
+   </template>
+
+</category>
+
+<category>
+   <pattern>ADVANTAGES MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>ADVANTAGES MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+
+
+
+<category>
+   <pattern>* ADVANTAGES MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>ADVANTAGES MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>* ADVANTAGES * MICROSERVICES *</pattern>
+   
+   <template>
+   <srai>ADVANTAGES MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* ADVANTAGES * MICROSERVICES</pattern>
+   
+   <template>
+   <srai>ADVANTAGES MICROSERVICES</srai> 
+   </template>
+   
+</category>
+
+<!-- END OF ADVANTAGES OF DEVOPS -->
+</aiml>
+

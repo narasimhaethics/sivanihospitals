@@ -1,0 +1,182 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+
+
+<category>
+   <pattern>DEVOPS</pattern>
+   
+   <template>
+     Our DevOps leverages collaboration, monitoring, tool-chain pipelines, automation and Cloud adoption. With our DevOps as a service offering, we ensure rapid on-boarding of applications by automating end-to-end delivery pipeline and facilitate continuous integration and development across leading cloud platforms.
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* DEVOPS</pattern>
+   
+   <template>
+   <srai>DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>DEVOPS *</pattern>
+   
+   <template>
+   <srai>DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* DEVOPS *</pattern>
+   
+   <template>
+   <srai>DEVOPS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>MICRO SERVICES</pattern>
+   
+   <template>
+     Our microservice architecture is a method of developing software applications as a suite of independently deployable, small, modular services in which each service runs a unique process and communicates through a well-defined.
+To make scalable microservices we use “Dockers” and “kubernetes. 
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>MICRO SERVICES *</pattern>
+   
+   <template>
+  <srai>MICRO SERVICES</srai>   
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>* MICRO SERVICES</pattern>
+   
+   <template>
+  <srai>MICRO SERVICES</srai>   
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* MICRO SERVICES *</pattern>
+   
+   <template>
+  <srai>MICRO SERVICES</srai>   
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>ARTIFICIAL INTELLIGENCE</pattern>
+   
+   <template>
+  HONCHI SOLUTION PVT LTD Artificial Intelligence as a 360 degree service. We help companies with developing a range of AI solutions that learn and think like humans using Natural Language Processing (NLP), Speech Recognition and Machine Learning feature HONCHI has core ability to integrate artificial intelligence using cognitive technology and semantic technology with any of your current and future business modules, solutions or third party applications across a full spectrum of industries, from Big Data, Business Intelligence, Analytics, IT Technology and others. We enable organization to connect artificial intelligence with your day to day working environment.   
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* ARTIFICIAL INTELLIGENCE</pattern>
+   
+   <template>
+  <srai>ARTIFICIAL INTELLIGENCE</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>ARTIFICIAL INTELLIGENCE *</pattern>
+   
+   <template>
+  <srai>ARTIFICIAL INTELLIGENCE</srai> 
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>* ARTIFICIAL INTELLIGENCE *</pattern>
+   
+   <template>
+  <srai>ARTIFICIAL INTELLIGENCE</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>AI</pattern>
+   
+   <template>
+  <srai>ARTIFICIAL INTELLIGENCE</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>* AI</pattern>
+   
+   <template>
+  <srai>ARTIFICIAL INTELLIGENCE</srai> 
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>AI *</pattern>
+   
+   <template>
+  <srai>ARTIFICIAL INTELLIGENCE</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* AI *</pattern>
+   
+   <template>
+  <srai>ARTIFICIAL INTELLIGENCE</srai> 
+   </template>
+   
+</category>
+
+
+
+
+
+
+</aiml>

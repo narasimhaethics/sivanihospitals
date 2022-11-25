@@ -1,0 +1,614 @@
+{%load static%}
+<!--DOCTYPE html-->
+
+<html class="no-js" lang="en">
+<head>
+  <!-- title and meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+
+  <title>19G01A0441</title>
+<link rel="icon" type="image/png" href="{% static 'img/core/logo.png'%}">
+  <!-- css -->
+      <link href="css/w3.css" rel="stylesheet" type="text/css">
+    <link href="css/w4.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Mrs+Sheppards" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pinyon+Script" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Monoton" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Aguafina+Script" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="{% static 'css/base.css'%}">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron" />
+    <link rel="stylesheet" href="{% static 'css/style.css'%}"><link rel="stylesheet" href="{% static 'css/style1.css'%}">
+    <link href="{% static 'css/ddfullscreenmenu.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/ser.css'%}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="{% static 'js/ddfullscreenmenu.js'%}"></script>
+    <script src="{% static 'js/script.js'%}"></script>
+
+
+
+  <!-- js -->
+  <script src="{% static 'js/modernizr.js'%}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body ng-app="honchi">
+
+<div class="wrapper">
+
+  <!-- new nav -->
+  <nav id="ddfullscreenmenu">
+	<div id="closex">Close</div>
+    <div id="ulwrapper">
+
+
+	<!-- Define your UL (nested) menu below -->
+                <!--ul id="fullscreenmenu-ul">
+		<li><a href="/index/#">HOME</a></li>
+		<li><a href="/index/#ab">ABOUT US</a>
+		  </li>
+		<li><a href="/index/#serv">SERVICES</a>
+		  <ul>
+		  <li><a href="/devops/#serv">DEVOPS</a></li>
+		  <li><a href="/microservices/#micro">MICRO SERVICES</a></li>
+		  <li><a href="/ai/#Ai">ARTIFICIAL INTELLIGENCE</a></li>
+		  </ul>
+		</li>
+		<li><a href="/index/#Product">PRODUCTS</a></li>
+		</li>
+		<li><a href="/index/#contact">CONTACT US</a></li>
+		</ul-->
+	       </div>
+        </nav>
+
+<script>
+
+// initialize menu. Call this after menu markup:
+ddfullscreenmenu.init()
+
+</script>
+
+    <div class="header">
+      <a href ="/index/">
+       <img class="logo" style="position:fixed; right:0px; top:0px;"  src="{% static 'img/core/logo1.png'%}" width="100px" height="100px"/></a>
+
+ </div>
+
+
+<div id="navtoggler" onClick="ddfullscreenmenu.togglemenu()">
+</div>
+
+
+
+<script>
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 08) || 9000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 05);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 2);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid white}";
+        document.body.appendChild(css);
+    };
+</script>
+
+         <main>
+
+              <section class="module parallax parallax-1">
+              <div class="container">
+                <h1>19G01A0441 Hospital</h1>
+
+               <p style="font-size:30px; color: black;font-family: Monoton;" class="animate-box dev" style="padding-bottom:300px;">
+                  <a href="/index/#serv" class="typewrite" data-period="2000" data-type=" [ &quot;MONOLITHIC TO MICRO SERVICES&quot;,&quot;KILLED MANAGED SERVICES THROUGH DEVOPS &quot;,&quot;SOFTWARE TO ARTIFICIAL INTILLIGENCE&quot;]" style="color:black;font-family:Orbitron;"></a>
+               </p>
+                   <div class="mySlides ">
+                       <p><a href="#serv1" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
+      </div>
+        </div>
+      </section>
+            <!--section of about us -->
+           <section class="module content" id="ab">
+                <div class="w3-container w3-row w3-center w3-light-grey w3-padding-20"><br>
+                    <h2 class="w3-center">ABOUT THE HOSPITAL</h2>
+                </div>
+                <div class="w3-row-padding  w3-center">
+                    <p  style="margin-top:50px; margin-left:50px; margin-right:50px; text-align:justify;text-justify: inter-word;">&nbsp;
+                        <b>Instructions for Appointments</b><br>
+
+                        1. Please make online appointments as far as possible.<br>
+                        2. If you have not visitied Hospital before (first time to CMC), 
+                        you are encouraged to do Online pre-registration (Click here) and contact Silver Gate (600) for help.
+                       <br> 3. If you reach Hospital, Kadapa without a confirmed appointment, please contact our staff in Silver Gate (600) for an early appointment.
+                    </p>
+                    </font>
+
+                    <div class="w3-container w3-row w3-center w3-dark-grey">
+                        <h2 style="margin-top:10px;">Our Vison & Mission:</h2>
+                        <p style="margin-top:10px; ">To be a preferred, give end to end solutions for the patients.
+                        </p>
+                    </div>
+                </div>
+            <hr>
+           </section>
+
+   <!-- Team Container -->
+    <div id="section">
+
+        <!-- Grid -->
+        <div class="w3-row w3-container">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16" style="">What We Offer</span>
+            </div>
+            <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+                <h3>Design</h3>
+                <p>We specialize in providing an extensive  services to the patients</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+                <h3>Branding</h3>
+                <p>19G01A0441 Hospital PVT LTD 'Hospital Services helps to Patients decrease their diseases,
+                    brand recognition, leads and sales</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+                <h3>Consultation</h3>
+                <p>In 19G01A0441 Hospital, Feel free to consult the doctor and doctors are very familiar to take patients.
+                </p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+                <h3>Promises</h3>
+                <p>Maximum we assure to the patients to get recovery asap.</p>
+            </div>
+        </div>
+
+     <!--   <div class="w3-container w3-padding-64 w3-center " id="team">
+        <h2><span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-10" style="font-family:Orbitron;">Meet the team</span></h2>-->
+          <!--  <p style="font-family:Orbitron;">Meet the team :</p> -->
+
+           <!-- <div class="w3-row w3-animate-bottom">
+                <br>
+
+                <div class="w3-quarter">
+                    <img src="{% static 'img/core/ceo.jpg' %}" alt="Boss" style="width:41%" class="w3-circle w3-hover-opacity">
+                    <h3>Sivani</h3>
+                    <p>CEO&Co-founder</p>
+                </div>
+
+                 <div class="w3-quarter">
+                    <img src="{% static 'img/core/bdh.jpg' %}" alt="Bd" style="width:45%" class="w3-circle w3-hover-opacity">
+                    <h3>Manasa</h3>
+                    <p>Business Head</p>
+                </div>
+
+
+                <div class="w3-quarter">
+                    <img src="{% static 'img/core/hr1.jpg' %}" alt="hr" style="width:45%" class="w3-circle w3-hover-opacity">
+                    <h3>Saraswati</h3>
+                    <p>HR.Manager</p>
+                </div>
+
+
+
+                 <div class="w3-quarter">
+                    <img src="{% static 'img/core/prd.jpg' %}" alt="Tech" style="width:45%" class="w3-circle w3-hover-opacity">
+                    <h3>N.Narsimha</h3>
+                    <p>Tech Head</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>-->
+    <!--section of Services -->
+
+    <!--section class="module parallax parallax-2" id="serv1">
+        <div class="container">
+        <h1>Services</h1>
+         <header class="bgimg-1 w3-display-container w3-grayscale-min w3-animate-bottom" id="">
+                <p><a href="#Product" class="w3-button w3-dark-grey w3-large w3-margin-top ">Artificial Intelligence-DevOps <br>MicroServices</a></p>
+            <a href="#serv"
+       button class="w3-btn w3-xlarge w3-dark-grey "  style="font-weight:900;">Read more..</button></a>
+         </header>
+      </div>
+    </section>
+
+
+
+     <section class="module content2" id="serv">
+
+           <div class="w3-container w3-row w3-center w3-black">
+          <h1>Our Services</h1>
+        </div>
+         <br>
+         <br>
+            <div class="w3-row-padding">
+
+                <div class="w3-third">
+                       <a href= "/devops/#serv" >
+                    <div class="w3-card-4">
+                        <img src="{% static 'img/core/dev2.png' %}" alt="Car" style="width:88%">
+                        <div class="w3-container w3-center">
+                            <p>Devops</p>
+                        </div>
+                    </div>
+                       </a>
+                </div>
+
+                <div class="w3-third">
+                        <a href= "/microservices/#micro" >
+                    <div class="w3-card-4">
+                        <img src="{% static 'img/core/m2.jpg' %}" alt="Car" style="width:88%">
+                        <div class="w3-container w3-center">
+                            <p>MicroServices</p>
+                        </div>
+                    </div>
+                       </a>
+                </div>
+
+                <div class="w3-third">
+                       <a href= "/ai/#Ai" >
+                    <div class="w3-card-4">
+                        <img src="{% static 'img/core/ai5.jpg' %}" alt="Car" style="width:88%">
+                        <div class="w3-container w3-center ">
+                            <p>Artificial Intelligence</p>
+                        </div>
+                    </div>
+                       </a>
+                </div>
+            </div>
+    </section-->
+
+        <!--section of product -->
+    <section class="module parallax parallax-3">
+        <div class="container">
+            <h1>Product</h1>
+            <header class="bgimg-1 w3-display-container w3-grayscale-min w3-animate-bottom" id="home">
+                <div class="w3-display-center w3-text-white" style="padding:10px">
+                    <span class="w3-jumbo w3-hide-small">Start something that matters</span>
+                    <br>
+                    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span>
+                    <br>
+                    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+                    <p><a href="#Product" class="w3-button w3-grey w3-padding-large w3-large w3-margin-top">Learn more and start today</a></p>
+                </div>
+            </header>
+        </div>
+    </section>
+
+      <section class="module content3" id = "Product">
+        <div class="container">
+
+        <h2>PRODUCTS</h2>
+        <div class="item-3 col w3-animate-bottom">
+             <a href= "/chatbot/#serv" >
+            <img src="{% static 'img/core/cht1.jpg' %}" alt="Forest" width="250" height="250"  >
+          	<h2 class="heading"><font color="black"><b>chatbot</b></font></h2>
+          </a>
+          </chat>
+         </div>
+        </div>
+      </section>
+    <!-- Contact Container -->
+    <div class="w3-container w3-padding-64 w3-theme-dark" id="contact">
+        <div class="w3-row">
+            <div class="w3-col m5">
+                <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+                <h3>Address</h3>
+                <p>Kadapa</p>
+                <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Andhra pradesh, India</p>
+                <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +91-8328121711</p>
+                <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>Sivanitechsolutions@gmail.com</p>
+            </div>
+            <div class="w3-col m8 w3-right" style="width:400px; height:200px;">
+                <form class="w3-container w3-card w3-padding-15 w3-white" action="#contact" target="">
+                    <div class="w3-section">
+                      <input class="w3-input" type="text" placeholder="Name"  required>
+                    </div>
+                    <div class="w3-section">
+
+                        <input class="w3-input" type="text" placeholder="Email" required>
+                    </div>
+                    <div class="w3-section">
+
+                        <input class="w3-input" type="text" placeholder="Message" required>
+                    </div>
+                   <!-- <label>I Like it!</label> -->
+                        <button type="submit" class="w3-button w3-right w3-theme ">Send</button>
+
+                </form>
+            </div>
+            <div class="w3-col m7">
+             <div class="w3-section" style="position:relative;top:20px;">
+
+                                  <iframe align="right" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d124439.34216146989!2d77.54037067675785!3d12.925103021679536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea67d10c5af3252e!2s19G01A0441 Hospital+Solution+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1494682627693" width="400px" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+             </div>
+            </div>
+        </div>
+    </div><!-- /main -->
+<!-- <script>
+    $(document).ready(function() {
+       // $('msg_head').(function(){
+            $('.msg_wrap').slideDown();
+
+        //});
+        $('.chat_head').click(function () {
+            $('.chat_body').slideToggle('slow')
+
+        });
+        $('.msg_head').click(function () {
+            $('.msg_wrap').slideToggle('slow');
+
+
+
+        });
+        $('.user').click(function () {
+
+            $('.msg_wrap').show();
+
+            $('.msg_box').show();
+
+        });
+        var msg=$('#msgg').val();
+        var input=$('.msg_input').val();
+       // $('#submitt').click(function(){
+           //alert(msg);
+           //$('<div class="msg_b">'+input+'</div>').insertBefore('.msg_push');
+			//$('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+
+          //$('<div class="msg_a">'+msg+'</div>').insertBefore('.msg_push');
+           // $('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+
+        //});
+    });
+</script> -->
+
+       <!--      <script>
+    $(document).ready(function() {
+
+	setTimeout(function () {
+    $(".msg_wrap").slideToggle('slow');
+  }, 5000);
+       // $('msg_head').(function(){
+           // $('.msg_wrap').slideDown();
+        //});
+        $('.chat_head').click(function () {
+            $('.chat_body').slideToggle('slow');
+        });
+        $('.msg_head').click(function () {
+          $('.msg_wrap').slideToggle('slow');
+
+
+        });
+        $('.user').click(function () {
+
+            $('.msg_wrap').show();
+            $('.msg_box').show();
+        });
+        var msg=$('#msgg').val();
+        var input=$('.msg_input').val();
+       // $('#submitt').click(function(){
+           //alert(msg);
+         //  $('<div class="msg_b">'+input+'</div>').insertBefore('.msg_push');
+			//$('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+
+          //$('<div class="msg_a">'+msg+'</div>').insertBefore('.msg_push');
+           // $('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+
+       // });
+    });
+</script>
+
+        <div class="msg_box" style="right:10px">
+        <div class="msg_head">19G01A0441 Hospital Operator
+            <div class="close" style="color:white">x</div>
+	</div>
+
+	<div class="msg_wrap">
+		<div class="msg_body">
+            <input type="hidden" value="{{message}}" name="msg" id="msgg"/>
+            <div class="msg_a">Ask me Anything</div>
+			<div class="msg_b"></div>
+			<div class="msg_a">{{message}}</div>
+			<div class="msg_push"></div>
+		</div>
+           <form action="/search/" method="get">
+<input type="hidden" name="p" value="index.html"/>
+               <div class="msg_footer" style="float:left"><input type="text" placeholder="Type your query" class="msg_input" rows="4" name="q" style="width:220px;height:70px;" ></input></div>
+               <div style="float:left;"> <input type="submit" name="submit" value="" id="submitt" style="visibility:hidden;"/></div>
+    </form>
+         </div>
+
+    </div>
+  </main>
+</div> -->
+
+
+ <script>
+    $(document).ready(function() {
+
+    setTimeout(function () {
+    //$(".msg_wrap").show();
+    //$(".msg_box").css('visibility','hidden');
+    $(".msg_box").css('display', 'inline-block');
+  }, 6000);
+       // $('msg_head').(function(){
+           // $('.msg_wrap').slideDown();
+        //});
+        $('.chat_head').click(function () {
+            $('.chat_body').slideToggle('slow');
+        });
+        $('.msg_head').click(function () {
+          $('.msg_wrap').slideToggle('slow');
+
+
+        });
+        $('.user').click(function () {
+
+            $('.msg_wrap').show();
+            $('.msg_box').show();
+        });
+
+       // $('#submitt').click(function(){
+           //alert(msg);
+         //  $('<div class="msg_b">'+input+'</div>').insertBefore('.msg_push');
+            //$('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+
+          //$('<div class="msg_a">'+msg+'</div>').insertBefore('.msg_push');
+           // $('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+
+       // });
+
+
+
+
+         $(document).on('submit','.dynamic-form', function (e) {
+
+e.preventDefault();
+var input = $('#tddd').val();
+
+var urlss="{%url 'search'%}";
+          $.ajax({
+    type: 'get',
+    url: "/search/",
+    data: {input:input},
+
+    success: function(request) {
+    //alert(request);
+
+    $('.msg_a').html(request);
+$('#tddd').val('')
+
+    }
+  });
+        });
+
+
+
+
+    });
+
+</script>
+
+               <div class="msg_box" style="right:10px;display:inline-block">
+        <div class="msg_head">19G01A0441 Hospital Operator
+            <div class="close" style="color:white">x</div>
+	</div>
+
+	<div class="msg_wrap">
+		<div class="msg_body">
+            <input type="hidden" value="{{message}}" name="msg" id="msgg"/>
+            <div class="msg_s">Ask me Anything</div>
+			<div class="msg_b"></div>
+			<div class="msg_a"></div>
+			<div class="msg_push"></div>
+		</div>
+           <form method="get" class="dynamic-form">
+<input type="hidden" name="p" value="index.html"/>
+               <div class="msg_footer" style="float:left"><input type="text" placeholder="Type your query" class="msg_input" id= "tddd" rows="4" name="q" style="width:220px;height:70px;" ></input></div>
+               <div style="float:left;"> <input type="submit" name="submit" value="" class="submitt" style="visibility:hidden;"/></div>
+    </form>
+         </div>
+
+    </div>
+
+</div>
+  </main>
+</div>
+
+      <footer role="contentinfo" id="footer">
+  <div class="container">
+
+      <a href="#id" onClick="fullwin('https://twitter.com/Sivanitechsolutions')"><i class="fa fa-twitter"></i></a>
+      <a href="#id" onClick="fullwin('https://www.facebook.com/19G01A0441 Hospital-solution-1897804073789457/?ref=bookmarks')"><i class="fa fa-facebook"></i></a>
+      <a href="#id" onClick="fullwin('https://www.instagram.com/Sivanitechsolutions/')"><i class="fa fa-instagram"></i></a>
+      <a href="#id" onClick="fullwin('https://www.linkedin.com/company-beta/13282456/')"><i class="fa fa-linkedin"></i></a>
+
+      <div style="position:relative;bottom:20px;" class="w3-tooltip w3-right">
+         <a class="" href="#"><span class="w3-xlarge">
+         <i class="fa fa-chevron-circle-up  " style="color:black;"></i></span></a>
+       </div>
+  </div>
+       </footer>
+
+
+
+
+  			<!-- Main Icon Menu --><!-- /#wrapper -->
+
+<!-- ads -->
+
+<script>
+function fullwin(targeturl){
+window.open(targeturl,"","fullscreen,scrollbars")
+}
+</script>
+<!-- analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34160351-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</body>
+</html>

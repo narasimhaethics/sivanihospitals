@@ -1,0 +1,334 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+
+
+<category>
+   <pattern>WHO IS THE CEO OF HONCHI SOLUTIONS</pattern>
+   
+   <template>
+     Director of honchi solutions is Sanskriti Gupta
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>WHO IS THE CEO OF HONCHI *</pattern>
+   
+   <template>
+     current director of honchi solutions is Sanskriti
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>DIRECTOR HONCHI</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>DIRECTOR HONCHI *</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* DIRECTOR HONCHI</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* DIRECTOR HONCHI *</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* DIRECTOR * HONCHI *</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* DIRECTOR * HONCHI</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>DIRECTOR * HONCHI</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>* HONCHI EMPLOYEE</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>HONCHI EMPLOYEE</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>HONCHI EMPLOYEE *</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern> * HONCHI * EMPLOYEE *</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* HONCHI * EMPLOYEE</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>HONCHI * EMPLOYEE *</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* HONCHI EMPLOYEE *</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>EMPLOYEE</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* EMPLOYEE *</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>EMPLOYEE *</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* EMPLOYEE</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+<category>
+   <pattern>* HONCHI SOLUTIONS EMPLOYEE</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* HONCHI SOLUTIONS EMPLOYEE *</pattern>
+   
+   <template>
+     <srai>HONCHI SOLUTIONS EMPLOYEE</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>HONCHI SOLUTIONS EMPLOYEE</pattern>
+   
+   <template>
+     Currently We Have Team Size of 10-15 people.
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>CEO HONCHI</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>CEO HONCHI *</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* CEO HONCHI</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* CEO HONCHI *</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* CEO * HONCHI *</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* CEO * HONCHI</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>CEO * HONCHI</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>CEO</pattern>
+   
+   <template>
+ <srai>WHO IS THE CEO OF HONCHI SOLUTIONS</srai>
+   </template>
+   
+</category>
+
+
+</aiml>

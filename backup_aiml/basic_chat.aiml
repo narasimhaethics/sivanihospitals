@@ -1,0 +1,358 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+<category>
+   <pattern>* HONCHI * SERVICES *</pattern>
+   
+   <template>
+ 
+   <srai>HONCHI SERVICES</srai>  
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* HONCHI SOLUTIONS SERVICES *</pattern>
+   
+   <template>
+ 
+   <srai>HONCHI SOLUTIONS SERVICES</srai>  
+   </template>
+   
+</category>
+
+<category>
+   <pattern>* HONCHI SOLUTIONS SERVICES</pattern>
+   
+   <template>
+ 
+   <srai>HONCHI SOLUTION SERVICES</srai>  
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* HONCHI SOLUTIONS SERVICES</pattern>
+   
+   <template>
+ 
+   <srai>HONCHI SOLUTIONS SERVICES</srai>  
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>HONCHI SOLUTIONS SERVICES *</pattern>
+   
+   <template>
+ 
+   <srai>HONCHI SOLUTIONS SERVICES</srai>  
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>HONCHI SOLUTIONS SERVICES</pattern>
+   
+   <template>
+ 
+    DevOps
+    Micro Services
+    AI    
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>HEY</pattern>
+   
+   <template>
+      hey my name is AI_BOT_honchi
+      How can i help you 
+      for company related information 
+
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>BOT CONTACT</pattern>
+   
+   <template>
+      Developer contact number *********
+      calling developer.............
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>HEY *</pattern>
+   
+   <template>
+            <srai>HEY</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>HELLO *</pattern>
+   
+   <template>
+            <srai>HEY</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>HELLO</pattern>
+   
+   <template>
+            <srai>HEY</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>HI</pattern>
+   
+   <template>
+            <srai>HEY</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>HI *</pattern>
+   
+   <template>
+            <srai>HEY</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* HI</pattern>
+   
+   <template>
+            <srai>HEY</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* HI *</pattern>
+   
+   <template>
+            <srai>HEY</srai> 
+   </template>
+   
+</category>
+
+
+
+
+
+
+
+
+<category>
+   <pattern>* HONCHI SOLUTIONS</pattern>
+   
+   <template>
+            <srai>HONCHI SOLUTIONS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>HONCHI SOLUTIONS *</pattern>
+   
+   <template>
+            <srai>HONCHI SOLUTIONS</srai> 
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* HONCHI SOLUTIONS *</pattern>
+   
+   <template>
+            <srai>HONCHI SOLUTIONS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>HONCHI SOLUTIONS</pattern>
+   
+   <template>
+      HONCHI Provides open source technology support .Honchi is a tech driven company,which makes large enterprises,SMEs and startups to help in achieve niche technology like DevOps MicroServices AI        
+   </template>
+   
+</category>
+
+
+
+
+
+
+<category>
+   <pattern>WHERE IS HONCHI SOLUTIONS</pattern>
+   
+   <template>
+            113, Vayu Business Center,
+            Kanka Towers, 
+            Dollars Colony Main road,
+            J.P Nagar, 4th Phase,
+            Dollar Layout, Phase 4,
+            JP Nagar, Bangalore,
+            Karnataka - 560078 
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>* WHERE IS HONCHI SOLUTIONS *</pattern>
+   
+   <template>
+            
+       
+         <srai>WHERE IS HONCHI SOLUTIONS</srai> 
+
+   </template>
+   
+</category>
+
+
+
+
+<category>
+   <pattern>* WHERE IS HONCHI SOLUTIONS</pattern>
+   
+   <template>
+            
+       
+         <srai>WHERE IS HONCHI SOLUTIONS</srai> 
+
+   </template>
+   
+</category>
+
+
+
+<category>
+   <pattern>* HONCHI SOLUTIONS LOCATION</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI SOLUTIONS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>HONCHI SOLUTIONS LOCATION *</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI SOLUTIONS</srai> 
+   </template>
+   
+</category>
+
+
+    
+
+<category>
+   <pattern>* HONCHI SOLUTIONS LOCATION *</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI SOLUTIONS</srai> 
+   </template>
+   
+</category>
+<!-- SECOND CATEGORY -->
+
+
+<category>
+   <pattern>* LOCATION HONCHI SOLUTIONS </pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI SOLUTIONS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* LOCATION HONCHI SOLUTIONS</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI SOLUTIONS</srai> 
+   </template>
+   
+</category>
+
+
+    
+
+<category>
+   <pattern>* LOCATION HONCHI SOLUTIONS  *</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI SOLUTIONS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* LOCATION * HONCHI SOLUTIONS</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI SOLUTIONS</srai> 
+   </template>
+   
+</category>
+
+
+<category>
+   <pattern>* LOCATION * HONCHI SOLUTIONS  *</pattern>
+   
+   <template>
+            <srai>WHERE IS HONCHI SOLUTIONS</srai> 
+   </template>
+   
+</category>
+
+
+
+
+</aiml>
